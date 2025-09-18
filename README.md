@@ -68,6 +68,7 @@ Copy code
 - Hamburger menu for navigation
 - Stacked layout for all sections
 - Cards adjust to fit smaller screens
+  A to my project on Vercel: https://vercel.com/israel-angos-projects/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-final-project-and-depl/EmQpdYWPWGfVh6XS76WeEnNQC4aF
 
 ---
 
