@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SparkleClean</title>
+  <style>
+    /* ===============================
+       Global Styles
+    ================================= */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #fafafa; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===============================
+       Header & Navigation
+    ================================= */
+    .site-header {
+      background: #222; color: #fff;
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
+    .navbar ul { list-style: none; display: flex; gap: 1rem; }
+    .navbar a { color: #fff; padding: 0.5rem; transition: border-bottom 0.3s; }
+    .navbar a:hover, .navbar a.active { border-bottom: 2px solid #ff6600; }
+    .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #fff; cursor: pointer; }
+
+    /* ===============================
+       Hero Section
+    ================================= */
+    .hero {
+      background: url("https://source.unsplash.com/1600x500/?cleaning,office") center/cover no-repeat;
+      padding: 4rem 2rem; text-align: center; color: #190202;
+    }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { margin-top: 0.5rem; font-size: 1.2rem; }
+
+    /* ===============================
+       Contact Section
+    ================================= */
+    .contact-container {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem; padding: 2rem;
+    }
+    .contact-form {
+      background: #fff; padding: 2rem;
+      border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 { margin-bottom: 1rem; color: #ff6600; }
+    .contact-form label { display: block; margin-top: 1rem; font-weight: bold; }
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 0.7rem; margin-top: 0.5rem;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    .contact-form textarea { resize: vertical; min-height: 120px; }
+    .contact-form button {
+      margin-top: 1rem; padding: 0.7rem 1.5rem;
+      background: #ff6600; color: #fff; border: none; border-radius: 5px;
+      cursor: pointer; transition: background 0.3s;
+    }
+    .contact-form button:hover { background: #e65c00; }
+
+    .contact-info {
+      background: #fff; padding: 2rem;
+      border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .contact-info h2 { margin-bottom: 1rem; color: #ff6600; }
+    .contact-info p { margin-bottom: 0.8rem; }
+
+    /* ===============================
+       Map Section
+    ================================= */
+    .map {
+      margin: 2rem; border-radius: 8px; overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    iframe { width: 100%; height: 350px; border: none; }
+
+    /* ===============================
+       Footer
+    ================================= */
+    .site-footer {
+      text-align: center; background: #222; color: #fff;
+      padding: 1rem; margin-top: 2rem;
+    }
+
+    /* ===============================
+       Responsive
+    ================================= */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none; flex-direction: column; background: #333;
+        position: absolute; top: 60px; right: 20px; padding: 1rem;
+        border-radius: 8px;
+      }
+      .navbar ul.show { display: flex; }
+      .menu-toggle { display: inline-block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">SparkleClean</div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>Get in touch with SparkleClean today for a sparkling experience!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <main class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Our Office</h2>
+      <p><strong>Address:</strong> 123 Ashraf Cleaning Service, Lagos, Nigeria</p>
+      <p><strong>Phone:</strong> +234 800 123 4567</p>
+      <p><strong>Email:</strong> contact@ashrafcleaningservices.com</p>
+      <p><strong>Hours:</strong> Mon - Sat: 8am - 6pm</p>
+    </div>
+  </main>
+
+  <!-- Map Section -->
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.4485698967427!2d3.379205815297433!3d6.524379295288205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c6c59f1a3f5%3A0x4b40b1f0efc7c7e0!2sLagos!5e0!3m2!1sen!2sng!4v1631541950632!5m2!1sen!2sng" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ASHRAF CLEANING SERVICES | Making Every Space Shine</p>
+  </footer>
+
+  <!-- JavaScript for Menu Toggle & Form Validation -->
+  <script>
+    // Toggle Menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    // Simple Form Validation
+    const form = document.getElementById("form");
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for contacting SparkleClean! We'll get back to you shortly.");
+      form.reset();
+    });
+  </script>
+</body>
+</html>

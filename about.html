@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | ASHRAF CLEANING SERVICES</title>
+  <style>
+    /* ===============================
+       Global Styles
+    ================================= */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; background: #fafafa; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ===============================
+       Header & Navigation
+    ================================= */
+    .site-header {
+      background: #222;
+      color: #f1ecec;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
+    .navbar ul { list-style: none; display: flex; gap: 1rem; }
+    .navbar a { color: #fff; padding: 0.5rem; transition: border-bottom 0.3s; }
+    .navbar a:hover, .navbar a.active { border-bottom: 2px solid #ff6600; }
+    .menu-toggle { display: none; font-size: 1.5rem; background: none; border: none; color: #fff; cursor: pointer; }
+
+    /* ===============================
+       Hero Section
+    ================================= */
+    .hero {
+      background: url("https://source.unsplash.com/1600x500/?cleaning,office") center/cover no-repeat;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #1e1d1d;
+    }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { margin-top: 0.5rem; font-size: 1.2rem; }
+
+    /* ===============================
+       About Page Content
+    ================================= */
+    .about-page { padding: 2rem; }
+
+    /* Company Story */
+    .company-story {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .about-text h2 { color: #ff6600; margin-bottom: 1rem; }
+    .about-text p { margin-bottom: 1rem; color: #444; }
+
+    /* Mission & Vision */
+    .mission-vision {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .mission-vision article {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .mission-vision h3 { margin-bottom: 0.5rem; color: #ff6600; }
+
+    /* Why Choose Us */
+    .why-choose-us { text-align: center; margin-bottom: 3rem; }
+    .why-choose-us h2 { margin-bottom: 1.5rem; color: #ff6600; }
+    .reasons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .reason-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .reason-card img {
+      width: 60px;
+      margin: 0 auto 1rem;
+    }
+    .reason-card h4 { margin-bottom: 0.5rem; color: #ff6600; }
+    .reason-card:hover { transform: translateY(-5px); }
+
+    /* ===============================
+       Footer
+    ================================= */
+    .site-footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ===============================
+       Responsive Navigation
+    ================================= */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .navbar ul.show { display: flex; }
+      .menu-toggle { display: inline-block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">SparkleClean</div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero about-hero">
+    <h1>About SparkleClean</h1>
+    <p>Professional Cleaning Services You Can Trust</p>
+  </section>
+
+  <!-- About Content -->
+  <main class="about-page">
+    <!-- Company Story -->
+    <section class="company-story">
+      <div class="about-img">
+        <img src="pic4.jpg" alt="Cleaning team at work">
+      </div>
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+          At <strong>ASHRAF CLEANING SERVICES</strong>, we believe a clean environment is key to healthy living and
+          productivity. Since our founding in 2015, we have served homes, offices, and commercial spaces with
+          excellence, reliability, and attention to detail.
+        </p>
+        <p>
+          Our trained team uses eco-friendly products and modern techniques to ensure every corner sparkles. 
+          Whether it’s routine cleaning, deep sanitization, or special events, SparkleClean is your trusted partner.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+      <article>
+        <h3>Our Mission</h3>
+        <p>
+          To deliver top-notch cleaning solutions that exceed expectations while maintaining sustainable and
+          eco-friendly practices.
+        </p>
+      </article>
+      <article>
+        <h3>Our Vision</h3>
+        <p>
+          To be the most trusted cleaning company in the region, known for professionalism, integrity, and
+          customer satisfaction.
+        </p>
+      </article>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+      <h2>Why Choose SparkleClean?</h2>
+      <div class="reasons">
+        <div class="reason-card">
+          <img src="pic1.jpg" alt="Eco-friendly icon">
+          <h4>Eco-Friendly Products</h4>
+          <p>We use safe and sustainable cleaning solutions to protect your health and the environment.</p>
+        </div>
+        <div class="reason-card">
+          <img src="pic2.jpg" alt="Trusted team icon">
+          <h4>Trusted Team</h4>
+          <p>Our staff is highly trained, background-checked, and committed to excellence.</p>
+        </div>
+        <div class="reason-card">
+          <img src="pic3.jpg" alt="On-time service icon">
+          <h4>Reliable & On-Time</h4>
+          <p>We value your time and deliver consistent results, every single visit.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ASHRAF CLEANING SERVICES | Making Every Space Shine</p>
+  </footer>
+
+  <!-- JS for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

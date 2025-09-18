@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | SparkleClean</title>
+  <style>
+    /* ===============================
+       Global Styles
+    ================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.6;
+      background: #fafafa;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===============================
+       Header & Navigation
+    ================================= */
+    .site-header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    .navbar a {
+      color: #e0d7d7;
+      padding: 0.5rem;
+      transition: border-bottom 0.3s ease;
+    }
+    .navbar a:hover,
+    .navbar a.active {
+      border-bottom: 2px solid #ff6600;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* ===============================
+       Hero Section
+    ================================= */
+    .hero {
+      background: url("https://source.unsplash.com/1600x500/?cleaning,office") center/cover no-repeat;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #180202;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* ===============================
+       Services Grid
+    ================================= */
+    .services-page {
+      padding: 2rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .service-card h2 {
+      margin: 1rem;
+      font-size: 1.2rem;
+      color: #ff6600;
+    }
+    .service-card p {
+      margin: 0 1rem 1rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ===============================
+       CTA Section
+    ================================= */
+    .cta {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      background: #ff6600;
+      color: #fff;
+      border-radius: 8px;
+    }
+    .cta h2 {
+      margin-bottom: 0.5rem;
+    }
+    .cta .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #fff;
+      color: #ff6600;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .cta .btn:hover {
+      background: #f4f4f4;
+    }
+
+    /* ===============================
+       Footer
+    ================================= */
+    .site-footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ===============================
+       Responsive
+    ================================= */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .navbar ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">SparkleClean</div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>Comprehensive Cleaning Solutions for Homes & Businesses</p>
+  </section>
+
+  <!-- Services Section -->
+  <main class="services-page">
+    <section class="services-grid">
+      <div class="service-card">
+        <img src="pic4.jpg" alt="Home Cleaning">
+        <h2>Residential Cleaning</h2>
+        <p>We keep your home spotless with flexible schedules tailored to your lifestyle.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="pic5.jpg" alt="Office Cleaning">
+        <h2>Office & Commercial Cleaning</h2>
+        <p>Maintain a professional and hygienic workplace with reliable office cleaning services.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="pic6.jpg" alt="Deep Cleaning">
+        <h2>Deep Cleaning</h2>
+        <p>Intensive deep cleaning that removes dirt, bacteria, and allergens for a healthier space.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="pic1.jpg" alt="Post-event Cleaning">
+        <h2>Post-Event Cleaning</h2>
+        <p>We handle the aftermath of events, restoring your venue to pristine condition.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="pic2.jpg" alt="Move-in/out Cleaning">
+        <h2>Move-In/Move-Out Cleaning</h2>
+        <p>Ensure a fresh start in your new home or leave your old one spotless.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="pic3.jpg" alt="Sanitization Services">
+        <h2>Sanitization Services</h2>
+        <p>Protect your family or staff with sanitization solutions that kill 99.9% of germs.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Need Professional Cleaning?</h2>
+      <p>Book a free consultation today and experience the SparkleClean difference!</p>
+      <a href="contact.html" class="btn">Get a Quote</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 ASHRAF CLEANING SERVICES | Making Every Space Shine</p>
+  </footer>
+
+  <!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".navbar ul");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
